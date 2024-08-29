@@ -28,7 +28,7 @@
     font: 400 22px Inter, sans-serif;
   }
   .nav-item {
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
   }
   .nav-item-grow {
     flex-grow: 1;
@@ -50,7 +50,7 @@
   .mancias-title {
     color: rgba(0, 0, 0, 0.7);
     text-align: center;
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   }
   .mancias-description {
     display: flex;
@@ -73,12 +73,18 @@
   }
   .cta-button {
     border-radius: 20px;
-    background-color: #d9d9d9;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    backdrop-filter: blur(10px); /* Desenfoque de fondo */
+    -webkit-backdrop-filter: blur(10px); /* Desenfoque de fondo para Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde semitransparente */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
     align-self: start;
     font-size: 18px;
     text-align: center;
     padding: 23px 26px;
-  }
+    text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
+}
+
   .cta-button:hover{
     transform: scale(1.2);
   }
@@ -91,10 +97,13 @@
     /*padding-right: 10px;*/
   }
   .canalizar-title {
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    background-color:rgba(167, 166, 166, 0.5);
+    text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    backdrop-filter: blur(10px); /* Desenfoque de fondo */
+    -webkit-backdrop-filter: blur(10px); /* Desenfoque de fondo para Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde semitransparente */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
     font-family: BIZ UDGothic, sans-serif;
-    color: #282828;
     text-align: center;
     padding: 42px 10px;
     border-radius: 10px;
@@ -113,6 +122,7 @@
     align-self: end;
     margin-top: 10px;
     font-size: 25px;
+    text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
   }
   .canalizar-item:hover {
     transform: scale(1.2);
@@ -168,7 +178,12 @@
      
     @media (max-width: 991px) { .header { max-width: 100%; white-space: initial; } }
     .logo { 
-      background-blend-mode:overlay; background-color: #c1bebe; 
+      background-blend-mode:overlay; 
+      background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+      backdrop-filter: blur(10px); /* Desenfoque de fondo */
+      -webkit-backdrop-filter: blur(10px); /* Desenfoque de fondo para Safari */
+      border: 1px solid rgba(255, 255, 255, 0.3); /* Borde semitransparente */
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
       border-radius: 50%; 
       width: 50px; 
       height: 50px; 
@@ -185,13 +200,18 @@
       left: 50%; /* Centramos horizontalmente */
       transform: translate(-50%, -50%); /* Ajustamos para centrar completamente */
       color: #626262; /* Color del texto */
+      text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
     }
 
     @media (max-width: 991px) { .logo { white-space: initial; } }
 
     .nav-menu { 
       border-radius: 20px; 
-      background-color: #f2f2f2; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); 
+      background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+      backdrop-filter: blur(10px); /* Desenfoque de fondo */
+      -webkit-backdrop-filter: blur(10px); /* Desenfoque de fondo para Safari */
+      border: 1px solid rgba(255, 255, 255, 0.3); /* Borde semitransparente */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
       display: flex; 
       gap: 30px; 
       flex-wrap: wrap; 
@@ -201,7 +221,7 @@
     }
 
     @media (max-width: 991px) { .nav-menu { white-space: initial; padding: 0 20px; } }
-    .nav-item { text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); } 
+    .nav-item { text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25); } 
     .nav-item:hover {transform: scale(1.1);}
     .nav-item:first-child { flex-grow: 1; }
     .nav-item:last-child { flex-basis: auto; }
@@ -238,6 +258,7 @@
     align-items: center;
     margin: -180px;
     margin-top: 1px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3); /* Añade esta línea */
   }
   .minimal-container:hover {
     transform: scale(1.1) rotate(5deg);
