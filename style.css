@@ -35,7 +35,7 @@
   }
   .content-wrapper {
     display: flex;
-    margin-top: 179px;
+    margin-top: 160px;
     width: 100%;
     gap: 20px;
     font-weight: 400;
@@ -75,7 +75,6 @@
     border-radius: 20px;
     background-color: #d9d9d9;
     align-self: start;
-    margin-top: 22px;
     font-size: 18px;
     text-align: center;
     padding: 23px 26px;
@@ -88,7 +87,8 @@
     display: flex;
     flex-direction: column;
     font-size: 25px;
-    padding-right: 10px;
+    margin-top: 15px;
+    /*padding-right: 10px;*/
   }
   .canalizar-title {
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -106,15 +106,13 @@
     flex-direction: column;
     font-family: BioRhyme, sans-serif;
     text-align: right;
+    padding-right: 10px;
  
   }
   .canalizar-item {
     align-self: end;
     margin-top: 10px;
     font-size: 25px;
-  }
-  .canalizar-title:hover {
-    transform: scale(1.2);
   }
   .canalizar-item:hover {
     transform: scale(1.2);
@@ -156,7 +154,18 @@
   }
   /**************************************************************************/
     .oracle-section { display: flex; flex-direction: column; }
-    .header { display: flex; margin-left: 22px; width: 100%; max-width: 1027px; gap: 20px; color: #000; font-weight: 400; white-space: nowrap; flex-wrap: wrap; justify-content: space-between; }
+    .header { 
+      display: flex; 
+      align-items: center;
+      width: 100%; 
+      max-width: 1027px; 
+      gap: 20px; 
+      color: #000; 
+      font-weight: 400; 
+      white-space: nowrap; 
+      flex-wrap: wrap; 
+      justify-content: space-between; }
+
     @media (max-width: 991px) { .header { max-width: 100%; white-space: initial; } }
     .logo { 
       background-blend-mode:overlay; background-color: #c1bebe; 
@@ -187,7 +196,8 @@
       gap: 30px; 
       flex-wrap: wrap; 
       padding: 20px 30px; 
-      font: 18px Inter, sans-serif; }
+      font: 18px Inter, sans-serif; 
+    }
 
     @media (max-width: 991px) { .nav-menu { white-space: initial; padding: 0 20px; } }
     .nav-item { text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); } 
@@ -230,4 +240,18 @@
   .minimal-container:hover {
     transform: scale(1.1) rotate(5deg);
   }
-
+  /*.minimal-container:hover {
+    transform: scale(1.1) rotate(5deg);
+    animation: shake 0.5s ease infinite; 
+  }
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0); 
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-15px); 
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(15px); 
+    }
+  }*/
