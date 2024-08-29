@@ -1,6 +1,11 @@
     .mancias-container {
     display: flex;
     flex-direction: column;
+    /*justify-content: center;
+    align-items: center;*/
+  }
+  a {
+    text-decoration: none;
   }
   .navigation {
     border-radius: 20px;
@@ -40,26 +45,32 @@
     color: rgba(0, 0, 0, 0.7);
     text-align: center;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    font-size: 41px;
-    width: 297px;
   }
   .mancias-description {
     display: flex;
-    margin-top: 31px;
-    padding-left: 36px;
+    margin-top: 10px;
+    padding-left: 20px;
     flex-direction: column;
+  }
+  .mancias-description2 {
+    display: flex;
+    margin-top: 90px;
+    margin-left: 20px;
+    padding-left: 20px;
+    flex-direction: row;
   }
   .description-text {
     color: #4a4a4a;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 30px;
+    font-size: 20px;
+    text-align: justify;
   }
   .cta-button {
     border-radius: 20px;
     background-color: #d9d9d9;
     align-self: start;
     margin-top: 22px;
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
     padding: 23px 26px;
   }
@@ -67,33 +78,37 @@
     align-self: start;
     display: flex;
     flex-direction: column;
-    font-size: 30px;
+    font-size: 25px;
   }
   .canalizar-title {
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: #a7a6a6;
+    background-color:rgba(167, 166, 166, 0.5);
     font-family: BIZ UDGothic, sans-serif;
     color: #282828;
     text-align: center;
     padding: 42px 10px;
+    border-radius: 10px;
   }
   .canalizar-list {
+    list-style: none;
     align-self: end;
     display: flex;
     flex-direction: column;
     font-family: BioRhyme, sans-serif;
     text-align: right;
-    margin: 26px 43px 0 0;
+ 
   }
   .canalizar-item {
     align-self: end;
     margin-top: 10px;
+    font-size: 25px;
   }
   .image-gallery {
     align-self: end;
     display: flex;
     gap: 38px;
     margin: 139px 43px 0 0;
+    font-size: 25px;
   }
   .gallery-image {
     aspect-ratio: 1.08;
@@ -127,9 +142,37 @@
     .oracle-section { display: flex; flex-direction: column; }
     .header { display: flex; margin-left: 22px; width: 100%; max-width: 1027px; gap: 20px; color: #000; font-weight: 400; white-space: nowrap; flex-wrap: wrap; justify-content: space-between; }
     @media (max-width: 991px) { .header { max-width: 100%; white-space: initial; } }
-    .logo { background-blend-mode: overlay; background-color: #c1bebe; border-radius: 50%; width: 60px; height: 60px; margin: auto 0; padding: 17px; font: 30px BIZ UDGothic, sans-serif; }
+    .logo { 
+      background-blend-mode:overlay; background-color: #c1bebe; 
+      border-radius: 50%; 
+      width: 50px; 
+      height: 50px; 
+      margin: auto 0; 
+      padding: 17px; 
+      font: 30px BIZ UDGothic, sans-serif; 
+      position: relative;
+    }
+    .logo::before {
+      content: "UC"; /* El texto que deseas insertar */
+      font-size: 20px;
+      position: absolute;
+      top: 50%; /* Centramos verticalmente */
+      left: 50%; /* Centramos horizontalmente */
+      transform: translate(-50%, -50%); /* Ajustamos para centrar completamente */
+      color: #626262; /* Color del texto */
+    }
+
     @media (max-width: 991px) { .logo { white-space: initial; } }
-    .nav-menu { border-radius: 20px; background-color: #f2f2f2; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); display: flex; gap: 26px; flex-wrap: wrap; padding: 29px 39px; font: 22px Inter, sans-serif; }
+
+    .nav-menu { 
+      border-radius: 20px; 
+      background-color: #f2f2f2; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); 
+      display: flex; 
+      gap: 30px; 
+      flex-wrap: wrap; 
+      padding: 20px 30px; 
+      font: 18px Inter, sans-serif; }
+
     @media (max-width: 991px) { .nav-menu { white-space: initial; padding: 0 20px; } }
     .nav-item { text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
     .nav-item:first-child { flex-grow: 1; }
@@ -140,7 +183,6 @@
     .mancias-title { color: rgba(0, 0, 0, 0.7); text-align: center; text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); font-size: 41px; width: 297px; }
     .mancias-content { display: flex; margin-top: 31px; padding-left: 36px; flex-direction: column; }
     @media (max-width: 991px) { .mancias-content { padding-left: 20px; } }
-    .mancias-description { color: #4a4a4a; text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); font-size: 30px; }
     .discover-more { border-radius: 20px; background-color: #d9d9d9; align-self: start; margin-top: 22px; font-size: 25px; text-align: center; padding: 23px 26px; }
     @media (max-width: 991px) { .discover-more { padding: 0 20px; } }
     .channeling-section { align-self: start; display: flex; flex-direction: column; font-size: 30px; }
@@ -158,7 +200,17 @@
     .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 /*****************************************************************************************************************/
 .minimal-container {
+  transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
     display: flex;
     min-height: 0;
     max-width: 0;
+    justify-content: center;
+    align-items: center;
+    margin: -100px;
   }
+  .minimal-container:hover {
+    transform: scale(1.1) rotate(5deg);
+  }
+
