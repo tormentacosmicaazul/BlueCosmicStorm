@@ -193,7 +193,7 @@
       position: relative;
     }
     .logo::before {
-      content: "UC"; /* El texto que deseas insertar */
+      content: "OC"; /* El texto que deseas insertar */
       font-size: 20px;
       position: absolute;
       top: 50%; /* Centramos verticalmente */
