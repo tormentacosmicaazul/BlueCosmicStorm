@@ -263,6 +263,20 @@
   .minimal-container:hover {
     transform: scale(1.1) rotate(5deg);
   }
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-15px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(15px);
+    }
+  }
+  .shake-active {
+    animation: shake 0.5s ease;
+  }
   /*.minimal-container:hover {
     transform: scale(1.1) rotate(5deg);
     animation: shake 0.5s ease infinite; 

@@ -44,29 +44,29 @@
       </article>
 
       <section class="minimal-container w3-hover-white">
-        <img src="Rectangle 2.png">
+        <img src="Rectangle 2.png" onclick="shakeElement(this)">
       </section>
       <section class="minimal-container w3-hover-white">
-        <img src="Rectangle 3.png">
+        <img src="Rectangle 3.png" onclick="shakeElement(this)">
       </section>
       <section class="minimal-container w3-hover-white">
-        <img src="Rectangle 4.png">
+        <img src="Rectangle 4.png" onclick="shakeElement(this)">
       </section>
       <section class="minimal-container w3-hover-white">
-        <img src="Rectangle 5.png">
+        <img src="Rectangle 5.png" onclick="shakeElement(this)">
       </section>
       <section class="minimal-container w3-hover-white">
-        <img src="Rectangle 6.png">
+        <img src="Rectangle 6.png" onclick="shakeElement(this)">
       </section>
       <section class="minimal-container w3-hover-white">
-        <img src="Rectangle 7.png">
+        <img src="Rectangle 7.png" onclick="shakeElement(this)">
       </section>
 
       <aside class="canalizar-section">
         <h3 class="canalizar-title">¿Qué es canalizar?</h3>
         <ul class="canalizar-list">
           <li class="canalizar-item">Meditación</li>
-          <li class="canalizar-item">Rituales</li>
+          <li class="canalizar-item">Rituales</li> 
           <li class="canalizar-item">Limpiezas</li>
           <li class="canalizar-item">Sanación</li>
         </ul>
@@ -80,6 +80,13 @@
       </aside>
     </div>
   </section>
+<script>
+  function shakeElement(element) {
+  element.classList.add('shake-active');
+  setTimeout(() => {
+    element.classList.remove('shake-active');
+  }, 500); // Duración de la animación en milisegundos
+}
+</script>
 </body>
-
 </html>
