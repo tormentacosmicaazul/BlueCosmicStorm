@@ -35,7 +35,7 @@
   }
   .content-wrapper {
     display: flex;
-    margin-top: 160px;
+    margin-top: 80px;
     width: 100%;
     gap: 20px;
     font-weight: 400;
@@ -165,7 +165,7 @@
       white-space: nowrap; 
       flex-wrap: wrap; 
       justify-content: space-between; }
-
+     
     @media (max-width: 991px) { .header { max-width: 100%; white-space: initial; } }
     .logo { 
       background-blend-mode:overlay; background-color: #c1bebe; 
@@ -197,6 +197,7 @@
       flex-wrap: wrap; 
       padding: 20px 30px; 
       font: 18px Inter, sans-serif; 
+     
     }
 
     @media (max-width: 991px) { .nav-menu { white-space: initial; padding: 0 20px; } }
