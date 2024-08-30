@@ -306,6 +306,10 @@ font: 30px BIZ UDGothic, sans-serif;
   width: 60%;
   height: 60%;
   z-index: -1;
+  transition: transform 0.3s ease;
+}
+.minimal-container2:hover {
+  transform: scale(1.1) rotate(5deg);
 }
 .minimal-container {
     transition: transform 0.3s ease;
