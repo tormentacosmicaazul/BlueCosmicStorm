@@ -4,8 +4,51 @@
   .mancias-container {
     display: flex;
     flex-direction: column;
-    /*justify-content: center;
-    align-items: center;*/
+    justify-content: center;
+    align-items: center;
+  }
+  .header { 
+    display: flex; 
+    width: 100%; 
+    max-width: 1027px; 
+    gap: 20px; 
+    color: #000; 
+    font-weight: 400; 
+    white-space: nowrap; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+  }
+  @media (max-width: 991px) { .header { max-width: 100%; white-space: initial; } }
+  .logo { 
+      /* Establece el tamaño y la forma del logo */
+width: 50px;
+height: 50px;
+border-radius: 50%;
+/* Estilos de fondo */
+background-color: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+/* Posicionamiento */
+position: absolute;
+top: 0; /* Alinea con la parte superior */
+left: 0; /* Alinea con la parte izquierda */
+/* Centra el contenido (el texto del logo) */
+display: flex;
+justify-content: center;
+align-items: center;
+font: 30px BIZ UDGothic, sans-serif;
+  }
+  .logo::before {
+    content: "OC"; /* El texto que deseas insertar */
+    font-size: 20px;
+    position: absolute;
+    top: 50%; /* Centramos verticalmente */
+    left: 50%; /* Centramos horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustamos para centrar completamente */
+    color: #626262; /* Color del texto */
+    text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
   }
   a:link {
     text-decoration: none;
@@ -84,7 +127,6 @@
     padding: 23px 26px;
     text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
 }
-
   .cta-button:hover{
     transform: scale(1.2);
   }
@@ -164,48 +206,9 @@
   }
   /**************************************************************************/
     .oracle-section { display: flex; flex-direction: column; }
-    .header { 
-      display: flex; 
-      align-items: center;
-      width: 100%; 
-      max-width: 1027px; 
-      gap: 20px; 
-      color: #000; 
-      font-weight: 400; 
-      white-space: nowrap; 
-      flex-wrap: wrap; 
-      justify-content: space-between; }
-     
-    @media (max-width: 991px) { .header { max-width: 100%; white-space: initial; } }
-    .logo { 
-      background-blend-mode:overlay; 
-      background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
-      backdrop-filter: blur(10px); /* Desenfoque de fondo */
-      -webkit-backdrop-filter: blur(10px); /* Desenfoque de fondo para Safari */
-      border: 1px solid rgba(255, 255, 255, 0.3); /* Borde semitransparente */
-      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-      border-radius: 50%; 
-      width: 50px; 
-      height: 50px; 
-      margin: auto 0; 
-      padding: 17px; 
-      font: 30px BIZ UDGothic, sans-serif; 
-      position: relative;
-    }
-    .logo::before {
-      content: "OC"; /* El texto que deseas insertar */
-      font-size: 20px;
-      position: absolute;
-      top: 50%; /* Centramos verticalmente */
-      left: 50%; /* Centramos horizontalmente */
-      transform: translate(-50%, -50%); /* Ajustamos para centrar completamente */
-      color: #626262; /* Color del texto */
-      text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
-    }
-
     @media (max-width: 991px) { .logo { white-space: initial; } }
-
     .nav-menu { 
+      margin: 0 auto;
       border-radius: 20px; 
       background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
       backdrop-filter: blur(10px); /* Desenfoque de fondo */
@@ -217,9 +220,8 @@
       flex-wrap: wrap; 
       padding: 20px 30px; 
       font: 18px Inter, sans-serif; 
-     
+      display: flex;
     }
-
     @media (max-width: 991px) { .nav-menu { white-space: initial; padding: 0 20px; } }
     .nav-item { text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25); } 
     .nav-item:hover {transform: scale(1.1);}
