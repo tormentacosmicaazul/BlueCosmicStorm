@@ -150,6 +150,25 @@ font: 30px BIZ UDGothic, sans-serif;
     padding: 42px 10px;
     border-radius: 10px;
   }
+  .canalizar-title::before {
+    content: "Aquí, canalizar se refiere a abrirse a influencias más allá de lo material. Algunas personas practican la canalización para recibir información o inspiración de fuentes espirituales o energéticas.";
+    font-size: 10px;
+    position: absolute;
+    top: -30px; /* Ajusta la posición vertical */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Centra respecto al ancho del elemento */
+    background-color: #333;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 20px; /* Aumenta el valor para hacerlo más redondeado */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+  }
+  
+  .canalizar-title:hover::before {
+    opacity: 1; /* Hace visible el globo al hacer hover */
+  }
   .canalizar-list {
     list-style: none;
     align-self: end;
