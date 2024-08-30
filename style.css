@@ -99,13 +99,14 @@ font: 30px BIZ UDGothic, sans-serif;
     color: rgba(0, 0, 0, 0.7);
     text-align: justify;
     text-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    font-size: xx-large;
+    font-size: 40px;
   }
   .mancias-description {
     display: flex;
     margin-top: 10px;
-    padding-left: 20px;
     flex-direction: column;
+    width: 400px;
+    height: 525px;
   }
   .mancias-description2 {
     display: flex;
@@ -119,12 +120,13 @@ font: 30px BIZ UDGothic, sans-serif;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 20px;
     text-align: justify;
+    margin-left: 15px;
   }
   .description-text2 {
     color: #4a4a4a;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 15px;
-    text-align: justify;
+    text-align: left;
   }
   .cta-button {
     border-radius: 20px;
@@ -140,6 +142,23 @@ font: 30px BIZ UDGothic, sans-serif;
     text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
 }
   .cta-button:hover{
+    transform: scale(1.2);
+  }
+  .cta-button2 {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    backdrop-filter: blur(10px); /* Desenfoque de fondo */
+    -webkit-backdrop-filter: blur(10px); /* Desenfoque de fondo para Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde semitransparente */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    align-self: start;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 25px;
+    padding: 20px 23px;
+    text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
+}
+  .cta-button2:hover{
     transform: scale(1.2);
   }
   .canalizar-section {
@@ -292,7 +311,7 @@ font: 30px BIZ UDGothic, sans-serif;
     transition: transform 0.3s ease;
     width: 100%;
     height: 100%;
-    display: flex;
+    display:flex;
     min-height: 0;
     max-width: 0;
     justify-content: center;
@@ -339,14 +358,15 @@ font: 30px BIZ UDGothic, sans-serif;
 
   .background-image {
     position: absolute;
-    height: 75%;
-    width: 75%;
-    object-fit: cover;
+    height: 70%;
+    width: 70%;
+    object-fit: fill;
+
   }
 
   .foreground-image {
     aspect-ratio: 0.93;
-    object-position: center;
+
     width: 100%;
     border-radius: 30px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
