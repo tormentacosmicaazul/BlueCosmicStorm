@@ -4,8 +4,8 @@
   }
   .back{
     background-image: url(back3.png);
-    background-size: 90% 120% ;
-    background-position:45% 45%;
+    background-size: 100% 140% ;
+
   }
   .mancias-container {
     display: flex;
@@ -241,12 +241,17 @@ font: 30px BIZ UDGothic, sans-serif;
     font-family: BioRhyme, sans-serif;
     text-align: left;
     padding-right: 10px;
- 
   }
   .canalizar-item {
     align-self: end;
     margin-top: 10px;
     font-size: 15px;
+    text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
+  }
+  .canalizar-item2 {
+    align-self: end;
+    margin-top: 10px;
+    font-size: 16px;
     text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
   }
   .canalizar-item:hover {
