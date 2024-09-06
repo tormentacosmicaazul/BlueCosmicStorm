@@ -4,8 +4,8 @@
   }
   .back{
     background-image: url(back3.png);
-    background-size: 100% 150% ;
-    background-position: 40% 30%;
+    background-size: 90% 120% ;
+    background-position:45% 45%;
   }
   .mancias-container {
     display: flex;
@@ -120,6 +120,11 @@ font: 30px BIZ UDGothic, sans-serif;
     color: rgba(0, 0, 0, 0.7);
     text-align: justify;
     text-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    font-size: 38px;
+  }
+  .mancias-title3 {
+    color: rgba(0, 0, 0, 0.7);
+    text-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     font-size: 40px;
   }
   .mancias-description {
@@ -127,7 +132,7 @@ font: 30px BIZ UDGothic, sans-serif;
     margin-top: 10px;
     flex-direction: column;
     width: 500px;
-    height: 575px;
+    height: 570px;
   }
   .mancias-description2 {
     display: flex;
@@ -146,8 +151,15 @@ font: 30px BIZ UDGothic, sans-serif;
   .description-text2 {
     color: #4a4a4a;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
+  }
+  .description-text3 {
+    color: #4a4a4a;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 25px;
+    text-align: right;
+    margin-right: 20px;
   }
   .cta-button {
     border-radius: 20px;
@@ -227,14 +239,14 @@ font: 30px BIZ UDGothic, sans-serif;
     display: flex;
     flex-direction: column;
     font-family: BioRhyme, sans-serif;
-    text-align: right;
+    text-align: left;
     padding-right: 10px;
  
   }
   .canalizar-item {
     align-self: end;
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 15px;
     text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
   }
   .canalizar-item:hover {
@@ -374,8 +386,8 @@ font: 30px BIZ UDGothic, sans-serif;
     flex-direction: column;
     border-radius: 30px;
     position: relative;
-    min-height: 659px;
-    max-width: 621px;
+    min-height: 600px;
+    max-width: 560px;
     justify-content: center;
   }
   .background-image {
