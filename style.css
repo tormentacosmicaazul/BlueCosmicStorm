@@ -364,6 +364,17 @@ font: 30px BIZ UDGothic, sans-serif;
   .minimal-container:hover {
     transform: scale(1.1) rotate(5deg);
   }
+  .minimal-container3 {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    min-height: 0;
+    max-width: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    z-index: -1;
+  }
   @keyframes shake {
     0%, 100% {
       transform: translateX(0);
