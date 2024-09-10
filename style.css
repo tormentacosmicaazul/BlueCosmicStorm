@@ -1,5 +1,4 @@
-  body{
-    /*background-color: #EEEEEE;*/
+body {
     background: linear-gradient(135deg, #ffffff, #ffffff, #0a192f, #172a45);
   }
   .back{
@@ -9,6 +8,58 @@
   .back2{
     background-image: url(sahumoBack2.png);
     background-size: 100% 100% ;
+  }
+  .sec2{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*font-family: poppins;*/
+}
+.sec3{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*font-family: poppins;*/
+}
+  .sec2 > h1 {
+    animation: revealing;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 50%;
+    margin: 0px;
+  }
+  .sec3 > p {
+    animation: revealing2;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 50%;
+    margin: 0px;
+  }
+  @keyframes revealing {
+    from {
+      color: gray;
+      margin-right: 100vw;
+      filter: blur(50px);
+      opacity: 0.5;
+    }
+    to {
+      margin: 0px;
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes revealing2 {
+    from {
+      color: gray;
+      margin-left: 100vw;
+      filter: blur(50px);
+      opacity: 0.5;
+    }
+    to {
+      margin: 0px;
+      filter: blur(0px);
+      opacity: 1;
+    }
   }
   .mancias-container {
     display: flex;
