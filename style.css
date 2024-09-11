@@ -16,7 +16,7 @@ body {
   justify-content: center;
   /*font-family: poppins;*/
 }
-.sec2 > h1 {
+.sec2 > h1{
   animation: revealing;
   animation-timeline: view(block);
   animation-range: cover 0% cover 50%;
@@ -25,7 +25,7 @@ body {
 @keyframes revealing {
   from {
     color: gray;
-    margin-right: 100vw;
+    margin-right: 100%;
     filter: blur(50px);
     opacity: 0.5;
   }
@@ -35,14 +35,15 @@ body {
     opacity: 1;
   }
 }
+/*Usa transformaciones en lugar de animaciones: En lugar de animar propiedades como margin y filter, considera usar transformaciones (translate, scale, etc.). Las transformaciones suelen ser más eficientes en términos de rendimiento.*/
 .sec3{
   text-align: center;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   /*font-family: poppins;*/
 }
-  .sec3 > p {
+  .sec3 > h3 {
     animation: revealing2;
     animation-timeline: view(block);
     animation-range: cover 0% cover 50%;
@@ -51,7 +52,7 @@ body {
   @keyframes revealing2 {
     from {
       color: gray;
-      margin-left: 100vw;
+      margin-right:100%;
       filter: blur(50px);
       opacity: 0.5;
     }
