@@ -9,6 +9,10 @@ body {
     background-image: url(sahumoBack2.png);
     background-size: 100% 100% ;
   }
+  .back3{
+    background-image: url(reiki5.png);
+    background-size: 100% 100% ;
+  }
   .sec2{
   text-align: center;
   display: flex;
@@ -161,6 +165,16 @@ font: 30px BIZ UDGothic, sans-serif;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  .content-wrapper3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
   .mancias-info {
     display: flex;
     flex-direction: column;
@@ -263,7 +277,7 @@ font: 30px BIZ UDGothic, sans-serif;
     /*padding-right: 10px;*/
   }
   .canalizar-section2 {
-    align-self: start;
+    /*align-self: start;*/
     display: flex;
     flex-direction: column;
   }
