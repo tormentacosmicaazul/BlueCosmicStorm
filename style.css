@@ -16,6 +16,25 @@ body {
   justify-content: center;
   /*font-family: poppins;*/
 }
+.sec2 > h1 {
+  animation: revealing;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 50%;
+  margin: 0px;
+}
+@keyframes revealing {
+  from {
+    color: gray;
+    margin-right: 100vw;
+    filter: blur(50px);
+    opacity: 0.5;
+  }
+  to {
+    margin: 0px;
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
 .sec3{
   text-align: center;
   display: flex;
@@ -23,30 +42,11 @@ body {
   justify-content: center;
   /*font-family: poppins;*/
 }
-  .sec2 > h1 {
-    animation: revealing;
-    animation-timeline: view(block);
-    animation-range: cover 0% cover 50%;
-    margin: 0px;
-  }
   .sec3 > p {
     animation: revealing2;
     animation-timeline: view(block);
     animation-range: cover 0% cover 50%;
     margin: 0px;
-  }
-  @keyframes revealing {
-    from {
-      color: gray;
-      margin-right: 100vw;
-      filter: blur(50px);
-      opacity: 0.5;
-    }
-    to {
-      margin: 0px;
-      filter: blur(0px);
-      opacity: 1;
-    }
   }
   @keyframes revealing2 {
     from {
@@ -183,7 +183,7 @@ font: 30px BIZ UDGothic, sans-serif;
   }
   .mancias-description {
     display: flex;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     flex-direction: column;
     width: 500px;
     height: 570px;
@@ -261,7 +261,11 @@ font: 30px BIZ UDGothic, sans-serif;
     margin-top: 15px;
     /*padding-right: 10px;*/
   }
-  
+  .canalizar-section2 {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+  }
   .canalizar-title {
     text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
     background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
@@ -310,9 +314,10 @@ font: 30px BIZ UDGothic, sans-serif;
   }
   .canalizar-item2 {
     align-self: end;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     font-size: 16px;
     text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
+    color: #4a4a4a;
   }
   .canalizar-item:hover {
     transform: scale(1.2);
