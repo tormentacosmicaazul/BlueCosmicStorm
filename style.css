@@ -3,9 +3,11 @@ body {
     background-image: url(BlueCosmicStorm5.png);
     background-size: 110% 100%;
   }
-  .backColor{
+  .backFooter{
+    /*background-image: url(Footer.png);
+    background-size: 100% 100%;*/
     background-image: url(BlueCosmicStorm5.png);
-    background-size: 100% 100%;
+    background-size: 110% 100%;
   }
   .back{
     background-image: url(BlueCosmicStorm4.png);
@@ -190,6 +192,12 @@ font: 30px BIZ UDGothic, sans-serif;
     margin-top: 100px;
     margin-bottom: 100px;
   }
+  .content-wrapper5 {
+    display: flex;
+    width: 100%;
+    font-weight: 400;
+    justify-content: left;
+  }
   .mancias-info {
     display: flex;
     flex-direction: column;
@@ -296,6 +304,12 @@ font: 30px BIZ UDGothic, sans-serif;
     display: flex;
     flex-direction: column;
   }
+
+  .canalizar-section3 {
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
   .canalizar-title {
     text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
     background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
@@ -342,6 +356,7 @@ font: 30px BIZ UDGothic, sans-serif;
     font-size: 20px;
     text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
   }
+
   .canalizar-item2 {
     align-self: end;
     /*margin-top: 10px;*/
