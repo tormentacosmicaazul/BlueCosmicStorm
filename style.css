@@ -7,23 +7,23 @@ body {
     /*background-image: url(Footer.png);
     background-size: 100% 100%;*/
     background-image: url(BlueCosmicStorm5.png);
-    background-size: 110% 100%;
+    background-size: 100% 100%;
   }
   .back{
     background-image: url(BlueCosmicStorm4.png);
-    background-size: 100% 120% ;
+    background-size: 100% 100%;
   }
   .back2{
     background-image: url(sahumoBack2.png);
-    background-size: 100% 100% ;
+    background-size: 100% 100%;
   }
   .back3{
     background-image: url(reiki5.png);
-    background-size: 100% 100% ;
+    background-size: 100% 100%;
   }
   .back4{
     background-image: url(shamanismBack.png);
-    background-size: 100% 100% ;
+    background-size: 100% 100%;
   }
   .sec2{
   text-align: center;
@@ -41,7 +41,7 @@ body {
 @keyframes revealing {
   from {
     color: gray;
-    margin-right: 100%;
+  /*  margin-right: 100%;*/
     filter: blur(50px);
     opacity: 0.5;
   }
@@ -68,7 +68,7 @@ body {
   @keyframes revealing2 {
     from {
       color: gray;
-      margin-right:100%;
+    /*  margin-right:100%;*/
       filter: blur(50px);
       opacity: 0.5;
     }
@@ -256,7 +256,7 @@ font: 30px BIZ UDGothic, sans-serif;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 25px;
     text-align: right;
-    margin-right: 20px;
+   /*margin-right: 20px;*/
   }
   .cta-button {
     border-radius: 20px;
@@ -396,7 +396,7 @@ font: 30px BIZ UDGothic, sans-serif;
       padding: 0 20px;
     }
     .canalizar-list {
-      margin-right: 10px;
+     /*margin-right: 10px;*/
     }
     .image-gallery {
       margin: 40px 10px 0 0;
@@ -436,7 +436,7 @@ font: 30px BIZ UDGothic, sans-serif;
     .channeling-section { align-self: start; display: flex; flex-direction: column; font-size: 30px; }
     .channeling-title { text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); background-color: #a7a6a6; font-family: BIZ UDGothic, sans-serif; color: #282828; text-align: center; padding: 42px 10px; }
     .channeling-list { align-self: end; display: flex; flex-direction: column; font-family: BioRhyme, sans-serif; white-space: nowrap; text-align: right; margin: 26px 43px 0 0; }
-    @media (max-width: 991px) { .channeling-list { margin-right: 10px; white-space: initial; } }
+    @media (max-width: 991px) { .channeling-list {/* margin-right: 10px;*/ white-space: initial; } }
     .channeling-item { margin-top: 10px; }
     .channeling-item:nth-child(2) { align-self: end; margin-top: 11px; }
     .channeling-item:nth-child(3) { margin: 13px 0 0 14px; }
