@@ -78,6 +78,21 @@ body {
       opacity: 1;
     }
   }
+  .nav-menu { 
+    margin: 0 auto;
+    border-radius: 20px; 
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    backdrop-filter: blur(10px); /* Desenfoque de fondo */
+    -webkit-backdrop-filter: blur(10px); /* Desenfoque de fondo para Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde semitransparente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    display: flex; 
+    gap: 30px; 
+    flex-wrap: wrap; 
+    padding: 20px 30px; 
+    font: 18px Inter, sans-serif; 
+    display: flex;
+  }
   .mancias-container {
     display: flex;
     flex-direction: column;
@@ -229,11 +244,24 @@ font: 30px BIZ UDGothic, sans-serif;
   .mancias-description2 {
     display: flex;
     margin-top: 60px;
-    margin-left: 20px;
-    padding-left: 20px;
-    flex-direction: row;
+    margin-left: 90px;
+    /*
+    margin-right: -20px;
+    padding-left: 20px;    
     height: 2%;
-    width: 2%;
+    width: 2%;*/
+    flex-direction: row;
+  }
+  .mancias-description3 {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 40px;
+    /*
+    margin-right: -20px;
+    padding-left: 20px;    
+    height: 2%;
+    width: 2%;*/
+    flex-direction: row;
   }
   .description-text {
     color: #4a4a4a;
