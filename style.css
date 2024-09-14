@@ -26,10 +26,10 @@ body {
     background-size: 100% 100%;
   }
   .sec2{
-  text-align: center;
+  text-align: left;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   /*font-family: poppins;*/
 }
 .sec2 > h1{
@@ -41,7 +41,7 @@ body {
 @keyframes revealing {
   from {
     color: gray;
-  /*  margin-right: 100%;*/
+    margin-right: 100%;
     filter: blur(50px);
     opacity: 0.5;
   }
@@ -205,7 +205,7 @@ font: 30px BIZ UDGothic, sans-serif;
   }
   .mancias-title {
     color: rgba(0, 0, 0, 0.7);
-    text-align: center;
+    text-align: left;
     text-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   }
   .mancias-title2 {
@@ -232,6 +232,8 @@ font: 30px BIZ UDGothic, sans-serif;
     margin-left: 20px;
     padding-left: 20px;
     flex-direction: row;
+    height: 2%;
+    width: 2%;
   }
   .description-text {
     color: #4a4a4a;
@@ -402,51 +404,6 @@ font: 30px BIZ UDGothic, sans-serif;
       margin: 40px 10px 0 0;
     }
   }
-  /**************************************************************************/
-    .oracle-section { display: flex; flex-direction: column; }
-    @media (max-width: 991px) { .logo { white-space: initial; } }
-    .nav-menu { 
-      margin: 0 auto;
-      border-radius: 20px; 
-      background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
-      backdrop-filter: blur(10px); /* Desenfoque de fondo */
-      -webkit-backdrop-filter: blur(10px); /* Desenfoque de fondo para Safari */
-      border: 1px solid rgba(255, 255, 255, 0.3); /* Borde semitransparente */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-      display: flex; 
-      gap: 30px; 
-      flex-wrap: wrap; 
-      padding: 20px 30px; 
-      font: 18px Inter, sans-serif; 
-      display: flex;
-    }
-    @media (max-width: 991px) { .nav-menu { white-space: initial; padding: 0 20px; } }
-    .nav-item { text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25); } 
-    .nav-item:hover {transform: scale(1.1);}
-    .nav-item:first-child { flex-grow: 1; }
-    .nav-item:last-child { flex-basis: auto; }
-    .main-content { display: flex; margin-top: 179px; width: 100%; gap: 20px; font-weight: 400; flex-wrap: wrap; justify-content: space-between; }
-    @media (max-width: 991px) { .main-content { max-width: 100%; margin-top: 40px; } }
-    .mancias-section { display: flex; flex-direction: column; font-family: BIZ UDGothic, sans-serif; }
-    .mancias-title { color: rgba(0, 0, 0, 0.7); text-align: center; text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); font-size: 41px; width: 297px; }
-    .mancias-content { display: flex; margin-top: 31px; padding-left: 36px; flex-direction: column; }
-    @media (max-width: 991px) { .mancias-content { padding-left: 20px; } }
-    .discover-more { border-radius: 20px; background-color: #d9d9d9; align-self: start; margin-top: 22px; font-size: 25px; text-align: center; padding: 23px 26px; }
-    @media (max-width: 991px) { .discover-more { padding: 0 20px; } }
-    .channeling-section { align-self: start; display: flex; flex-direction: column; font-size: 30px; }
-    .channeling-title { text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); background-color: #a7a6a6; font-family: BIZ UDGothic, sans-serif; color: #282828; text-align: center; padding: 42px 10px; }
-    .channeling-list { align-self: end; display: flex; flex-direction: column; font-family: BioRhyme, sans-serif; white-space: nowrap; text-align: right; margin: 26px 43px 0 0; }
-    @media (max-width: 991px) { .channeling-list {/* margin-right: 10px;*/ white-space: initial; } }
-    .channeling-item { margin-top: 10px; }
-    .channeling-item:nth-child(2) { align-self: end; margin-top: 11px; }
-    .channeling-item:nth-child(3) { margin: 13px 0 0 14px; }
-    @media (max-width: 991px) { .channeling-item:nth-child(3) { margin-left: 10px; } }
-    .channeling-item:last-child { align-self: end; }
-    .image-gallery { align-self: end; display: flex; gap: 38px; margin: 139px 43px 0 0; }
-    @media (max-width: 991px) { .image-gallery { margin: 40px 10px 0 0; } }
-    .gallery-image { aspect-ratio: 1.08; object-fit: contain; object-position: center; width: 54px; background-blend-mode: color_burn; }
-    .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
-/*****************************************************************************************************************/
 .minimal-container2 {
   display: flex;
   min-height: 0;
