@@ -236,7 +236,6 @@ font: 30px BIZ UDGothic, sans-serif;
   }
   .mancias-description {
     display: flex;
-    /*margin-top: 10px;*/
     flex-direction: column;
     width: 500px;
     height: 570px;
@@ -262,6 +261,11 @@ font: 30px BIZ UDGothic, sans-serif;
     height: 2%;
     width: 2%;*/
     flex-direction: row;
+  }
+  .mancias-description4 {
+    display: flex;
+    flex-direction: column;
+    height: 570px;
   }
   .description-text {
     color: #4a4a4a;
@@ -492,6 +496,21 @@ font: 30px BIZ UDGothic, sans-serif;
     min-height: 513px;
     max-width: 473px;
   }
+  /* Media query para pantallas más pequeñas */
+@media only screen and (max-width: 500px) {
+  .rounded-container {
+    /* Ajusta los estilos para pantallas pequeñas */
+    /* Por ejemplo, reduce el padding o el tamaño del texto */
+    min-height: 100px;
+  }
+  .description-text2 {
+    font-size: 10px;
+  }
+  .cta-button2 {
+    font-size: 10px;
+    padding: 10px 13px;
+}
+}
   .image-container {
     display: flex;
     flex-direction: column;
