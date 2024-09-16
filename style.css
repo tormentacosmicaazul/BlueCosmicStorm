@@ -98,8 +98,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1;
   }
   .mancias-container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
+  }
+  .mancias-container3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -501,10 +509,10 @@ font: 30px BIZ UDGothic, sans-serif;
   .rounded-container {
     /* Ajusta los estilos para pantallas pequeñas */
     /* Por ejemplo, reduce el padding o el tamaño del texto */
-    min-height: 100px;
+    min-height: 213px;
   }
   .description-text2 {
-    font-size: 10px;
+    font-size: 12px;
   }
   .cta-button2 {
     font-size: 10px;
@@ -513,7 +521,18 @@ font: 30px BIZ UDGothic, sans-serif;
 .nav-menu { 
   gap: 10px; 
   padding: 5px 10px; 
-  font: 10px Inter, sans-serif; 
+  font: 15px Inter, sans-serif; 
+}
+.mancias-container {
+  margin-left: -80px;
+  justify-content: left;
+  align-items: left;
+  z-index: 1;
+}
+.mancias-description4 {
+  display: flex;
+  flex-direction: column;
+  height: 370px;
 }
 }
   .image-container {
