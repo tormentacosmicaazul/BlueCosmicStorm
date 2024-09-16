@@ -472,6 +472,31 @@ font: 30px BIZ UDGothic, sans-serif;
   .minimal-container:hover {
     transform: scale(1.1) rotate(5deg);
   }
+  /*.smoke {
+    position: absolute;
+    top: [ajusta aquí]; 
+    left: [ajusta aquí]; 
+    width: 10px;
+    height: 10px;
+    background-color: rgba(200, 200, 200, 0.5);
+    border-radius: 50%;
+    animation: smokeAnimation 5s infinite ease-in-out;
+}
+
+@keyframes smokeAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(2);
+        opacity: 0.2;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+}*/
   .minimal-container3 {
     width: 100%;
     height: 100%;
