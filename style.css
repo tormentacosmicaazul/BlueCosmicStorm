@@ -117,7 +117,7 @@ body {
   .header { 
     display: flex; 
     width: 100%; 
-    max-width: 1027px; 
+    max-width: 1027px;
     gap: 20px; 
     color: #000; 
     font-weight: 400; 
@@ -346,7 +346,6 @@ font: 30px BIZ UDGothic, sans-serif;
     display: flex;
     flex-direction: column;
   }
-
   .canalizar-section3 {
     justify-content: flex-start;
     display: flex;
@@ -379,7 +378,6 @@ font: 30px BIZ UDGothic, sans-serif;
     transition: opacity 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
   }
-  
   .canalizar-title:hover::before {
     opacity: 1; /* Hace visible el globo al hacer hover */
   }
@@ -530,6 +528,11 @@ font: 30px BIZ UDGothic, sans-serif;
     max-width: 473px;
   }
   /* Media query para pantallas más pequeñas */
+  @media only screen and (min-height:350px) { /*minimo de altura*/
+    .mancias-description {
+      width: 325px;
+    }
+  }
 @media only screen and (max-width: 500px) {
   .rounded-container {
     /* Ajusta los estilos para pantallas pequeñas */
