@@ -87,11 +87,12 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3); /* Borde semitransparente */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
     display: flex; 
-    gap: 30px; 
+    gap: 20px; 
     flex-wrap: wrap; 
     padding: 20px 30px; 
     font: 18px Inter, sans-serif; 
-    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .mancias-container {
     display: flex;
@@ -549,14 +550,14 @@ font: 30px BIZ UDGothic, sans-serif;
 .nav-menu { 
   gap: 10px; 
   padding: 5px 10px; 
-  font: 15px Inter, sans-serif; 
+  font: 17px Inter, sans-serif; 
 }
-.mancias-container {
+/*.mancias-container {
   margin-left: -80px;
   justify-content: left;
   align-items: left;
   z-index: 1;
-}
+}*/
 .mancias-description4 {
   display: flex;
   flex-direction: column;
