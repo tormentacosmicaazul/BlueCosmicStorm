@@ -346,6 +346,8 @@ font: 30px BIZ UDGothic, sans-serif;
     /*align-self: start;*/
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .canalizar-section3 {
     justify-content: flex-start;
