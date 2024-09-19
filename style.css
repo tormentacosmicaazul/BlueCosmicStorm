@@ -399,7 +399,6 @@ font: 30px BIZ UDGothic, sans-serif;
     font-size: 20px;
     text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
   }
-
   .canalizar-item2 {
     align-self: end;
     /*margin-top: 10px;*/
@@ -473,31 +472,6 @@ font: 30px BIZ UDGothic, sans-serif;
   .minimal-container:hover {
     transform: scale(1.1) rotate(5deg);
   }
-  /*.smoke {
-    position: absolute;
-    top: [ajusta aquí]; 
-    left: [ajusta aquí]; 
-    width: 10px;
-    height: 10px;
-    background-color: rgba(200, 200, 200, 0.5);
-    border-radius: 50%;
-    animation: smokeAnimation 5s infinite ease-in-out;
-}
-
-@keyframes smokeAnimation {
-    0% {
-        transform: scale(1);
-        opacity: 0.5;
-    }
-    50% {
-        transform: scale(2);
-        opacity: 0.2;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 0.5;
-    }
-}*/
   .minimal-container3 {
     width: 100%;
     height: 100%;
@@ -534,6 +508,10 @@ font: 30px BIZ UDGothic, sans-serif;
   @media only screen and (min-height:350px) { /*minimo de altura*/
     .mancias-description {
       width: 325px;
+    }
+    .minimal{
+      z-index: -1;
+      opacity: 0.5;
     }
   }
 @media only screen and (max-width: 500px) {
@@ -597,29 +575,13 @@ font: 30px BIZ UDGothic, sans-serif;
   }
   /****************************************************************************************/
   .seccion {
-    /*display: grid;
-    gap: var(--gutter);
-    grid-template-columns:
-      auto
-      1fr;
-    align-items: center;
-    min-height: 100vh;*/
-  }
-  .seccion {
-    /*z-index: 2;*/
-    /*background: hsl(210 17% 98% / 0.65);*/
     padding: 1rem;
     color: var(--text-1);
     -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
     font-size: 1rem;
   }
-  @media(prefers-color-scheme: dark) {
-    .seccion {
-      /*background: hsl(210 11% 15% / 0.65);*/
-    }
-  }
-  .seccion .imge {
+  .seccion .imge{
     grid-column: 1;
     width: 260px;
     max-width: 20vw;
@@ -689,16 +651,7 @@ font: 30px BIZ UDGothic, sans-serif;
     --gutter: 1rem;
     --gap: 0rem;
   }
-  .imge {
-    position: absolute;
-    left: 25%;
-    top: 15%;
-    z-index: 1;
-    opacity: 0.65;
-    filter: saturate(0.5);
-    -webkit-clip-path: polygon(0 15%, 75% 0, 100% 32%, 80% 100%, 0 67%);
-            clip-path: polygon(0 15%, 75% 0, 100% 32%, 80% 100%, 0 67%);
-  }
+  
   
   
 
