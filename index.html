@@ -123,7 +123,7 @@
                 resolver en tu vida.
               </li>
             </ul>
-          <a href="#" class="cta-button2" role="button">Toma una carta!</a>
+          <a class="cta-button2" role="button" onclick="mostrarLugarAleatorio()">Toma una carta!</a>
         </div>
       <section class="minimal-container3 w3-hide-small seccion" style="z-index: -1;">
         <img src="Rectangle 11.png" style="margin-left: 20px;margin-top: -350px;">
@@ -131,8 +131,42 @@
       </section>
     </section>
       </article>
-      <section class="image-container seccion" style="margin-top: 100px;margin-right: 20px;">
-        <img src="paño3.png" class="foreground-image" alt="Foreground image" onclick="shakeElement(this)">
+      <section class="image-container seccion" style="margin-top: 100px;margin-left: -100px;">
+    <!--img src="paño3.png" class="foreground-image" alt="Foreground image" onclick="shakeElement(this)"-->
+    <!-- flip-card-container -->
+    <div class="flip-card-container" id="pickacard">
+      <div class="flip-card">
+
+        <div class="card-front">
+          <figure>
+            <div class="img-bg"></div>
+            <img width="300" height="450" class=""
+              src="cartaDorso.png"
+              alt="Image 2">
+          </figure>
+        </div>
+        <div class="card-back">
+          <figure>
+            <div class="img-bg"></div>
+            <img width="300" height="450" class=""
+              src="cartaDorso.png"
+              alt="image-2">
+          </figure>
+          <button id="resultado"></button>
+          <div class="design-container">
+            <span class="design design--1"></span>
+            <span class="design design--2"></span>
+            <span class="design design--3"></span>
+            <span class="design design--4"></span>
+            <span class="design design--5"></span>
+            <span class="design design--6"></span>
+            <span class="design design--7"></span>
+            <span class="design design--8"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- /flip-card-container -->
       </section>
     </div>
   </div>
@@ -350,6 +384,42 @@ la humanidad los necesitaría.
     <h6 style="margin-left: 45px;margin-top: -10px;">Powered by Ifernández</h6> 
   </footer>
 <script>
+const lugares = [
+'El Mago: Poder creativo y habilidades manifestadas.',
+'La Papisa: Sabiduría intuitiva y misterio femenino.',
+'La Emperatriz: Fertilidad y abundancia.',
+'El Emperador: Autoridad y estructura.',
+'El Sumo Sacerdote: Espiritualidad y guía.',
+'Los Enamorados: Elección y amor.',
+'El Carro: Voluntad y dirección.',
+'La Justicia: Equilibrio y karma.',
+'El Ermitaño: Búsqueda interior y soledad.',
+'La Rueda de la Fortuna: Cambio y destino.',
+'La Fuerza: Coraje y dominio.',
+'El Colgado: Sacrificio y perspectiva.',
+'La Muerte: Transformación y renacimiento.',
+'La Templanza: Armonía y equilibrio.',
+'El Diablo: Tentación y pasión.',
+'La Torre: Crisis y revelación.',
+'La Estrella: Esperanza y inspiración.',
+'La Luna: Intuición y engaño.',
+'El Sol: Alegría y vitalidad.',
+'El Juicio: Renovación y evaluación.',
+'El Mundo: Logro y realización.',
+'El Loco: Viaje sin restricciones y espontaneidad.'
+        ];
+
+        function elegirLugarAleatorio() {
+            const indiceAleatorio = Math.floor(Math.random() * lugares.length);
+            return lugares[indiceAleatorio];
+        }
+
+        function mostrarLugarAleatorio() {
+            const lugarSeleccionado = elegirLugarAleatorio();
+            document.getElementById('resultado').textContent = `${lugarSeleccionado}`;
+            const pickACardElement = document.getElementById('pickacard');
+            pickACardElement.style.opacity = 1;
+        }
   function shakeElement(element) {
   element.classList.add('shake-active');
   setTimeout(() => {
