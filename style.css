@@ -275,6 +275,7 @@ font: 30px BIZ UDGothic, sans-serif;
     display: flex;
     flex-direction: column;
     height: 570px;
+    z-index: 1;
   }
   .description-text {
     color: #4a4a4a;
@@ -333,10 +334,10 @@ font: 30px BIZ UDGothic, sans-serif;
     transition: background-color 0.3s; /* Agregamos una transición suave */
     cursor:grab;
 }
-
 .cta-button2:active {
     /* Estilos cuando se hace clic en el botón */
-    background-color: rgba(255, 255, 240, 0.5); /* Cambia el color aquí */
+    border: 4px solid rgba(255, 255, 255, 0.3); /* Borde semitransparente */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
 }
   .cta-button2:hover{
     transform: scale(1.2);
@@ -520,6 +521,13 @@ font: 30px BIZ UDGothic, sans-serif;
       z-index: -1;
       opacity: 0.5;
     }
+    .marginTop{
+      margin-top: 200px;
+      margin-left: 35px;
+      /*border: 1px solid black;
+      z-index: -1;*/
+      bottom: 10px;
+    }
   }
 @media only screen and (max-width: 500px) {
   .rounded-container {
@@ -587,6 +595,9 @@ font: 30px BIZ UDGothic, sans-serif;
             backdrop-filter: blur(4px);
     font-size: 1rem;
   }
+  .marginTop{
+    margin-top: 100px;
+  }
   .seccion .imge{
     grid-column: 1;
     width: 260px;
@@ -638,7 +649,7 @@ font: 30px BIZ UDGothic, sans-serif;
     animation-end-delay: cover 50%;
     animation-range: cover 35% cover 50%;
     position: sticky;
-    bottom: 40%;
+    /*bottom: 40%;*/
   }
   @-webkit-keyframes item-reveal {
     0% {
@@ -726,11 +737,11 @@ figure,
 .img-bg {
   position: absolute;
 }
-/* figcaption */
+/* figcaption 
 figcaption {
   display: block;
   width: auto;
-  /*margin-top: 12%;*/
+  margin-top: 12%;
   padding: 8px 22px;
   font-weight: bold;
   line-height: 1.6;
@@ -742,7 +753,7 @@ figcaption {
   left: 100px;
   color: var(--white-1);
   background: hsla(var(--hue), 25%, 10%, .5);
-}
+}*/
 /* .img-bg */
 .img-bg {
   background: hsla(var(--hue), 25%, 10%, .5);
@@ -758,7 +769,6 @@ figcaption {
   transform: translate(-50%, -50%) rotate(18deg);
   width: 100%;
   height: 6px;
-  /*border: 1px solid var(--primary);*/
   border-left-color: transparent;
   border-right-color: transparent;
   transition: .1s;
