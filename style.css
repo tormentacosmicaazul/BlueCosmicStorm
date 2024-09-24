@@ -49,6 +49,10 @@ body {
     background-image: url(sanacionCollage.png);
     background-size: 100% 100%;
   }
+  .back11{
+    background-image: url(dreamsCollage.png);
+    background-size: 100% 100%;
+  }
   .sec2{
   text-align: left;
   display: flex;
