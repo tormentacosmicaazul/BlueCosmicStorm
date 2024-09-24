@@ -53,6 +53,10 @@ body {
     background-image: url(dreamsCollage.png);
     background-size: 100% 100%;
   }
+  .back12{
+    background-image: url(antropoCollage.png);
+    background-size: 100% 100%;
+  }
   .sec2{
   text-align: left;
   display: flex;
@@ -245,7 +249,13 @@ font: 30px BIZ UDGothic, sans-serif;
     margin-bottom: 100px;
   }
   .content-wrapper5 {
-    display: flex;
+    display:block;
+    width: 100%;
+    font-weight: 400;
+    justify-content: left;
+  }
+  .content-wrapper6 {
+    display:flex;
     width: 100%;
     font-weight: 400;
     justify-content: left;
