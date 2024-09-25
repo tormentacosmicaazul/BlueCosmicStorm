@@ -26,7 +26,7 @@ body {
     background-size: 100% 100%;
   }
   .back5{
-    background-image: url(cartomanciaCollage.png);
+    background-image: url(cartomanciaCollage2.png);
     background-size: 100% 100%;
   }
   .back6{
@@ -55,6 +55,10 @@ body {
   }
   .back12{
     background-image: url(antropoCollage.png);
+    background-size: 100% 100%;
+  }
+  .back13{
+    background-image: url(teoCollage.png);
     background-size: 100% 100%;
   }
   .sec2{
@@ -145,7 +149,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -150px;
+    /*margin-top: -150px;*/
   }
   .header { 
     display: flex; 
