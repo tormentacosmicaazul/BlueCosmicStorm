@@ -65,6 +65,10 @@ body {
     background-image: url(cabalaCollage.png);
     background-size: 100% 100%;
   }
+  .back15{
+    background-image: url(sincro.jpg);
+    background-size: 100% 100%;
+  }
   .sec2{
   text-align: left;
   display: flex;
