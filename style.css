@@ -42,11 +42,11 @@ body {
     background-size: 100% 100%;
   }
   .back9{
-    background-image: url(sanacionCollage.png);
+    background-image: url(sanacionCollage3.png);
     background-size: 100% 100%;
   }
   .back10{
-    background-image: url(sanacionCollage.png);
+    background-image: url(pensamientosCollage.png);
     background-size: 100% 100%;
   }
   .back11{
@@ -59,6 +59,10 @@ body {
   }
   .back13{
     background-image: url(teoCollage.png);
+    background-size: 100% 100%;
+  }
+  .back14{
+    background-image: url(cabalaCollage.png);
     background-size: 100% 100%;
   }
   .sec2{
