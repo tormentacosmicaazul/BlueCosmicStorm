@@ -69,6 +69,10 @@ body {
     background-image: url(sincro.jpg);
     background-size: 100% 100%;
   }
+  .back16{
+    background-image: url(zodiac.webp);
+    background-size: 100% 100%;
+  }
   .sec2{
   text-align: left;
   display: flex;
