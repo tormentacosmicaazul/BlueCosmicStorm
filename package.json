@@ -5,5 +5,8 @@
   "description": "Records a short navigation video of the deployed site using Playwright.",
   "dependencies": {
     "playwright": "1.48.0"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5"
   }
 }
