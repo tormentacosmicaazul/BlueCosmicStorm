@@ -1,0 +1,9 @@
+ Lo que tenés que hacer vos (3 repos, ~5 min cada uno):
+
+Copiar .github/, scripts/ de _repo-template/ al root del repo
+Cambiar TARGET_URL en record-preview.js (instrucciones exactas en 
+SETUP-PER-REPO.md
+)
+Settings → Actions → Workflow permissions → Read and write
+Actions → "Generate preview video" → Run workflow
+Esperar ~2 min, verificar que preview.mp4 aparezca en el repo
