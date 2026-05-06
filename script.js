@@ -106,3 +106,67 @@ function shakeElement(element) {
 // Expongo funciones usadas por onclick inline en el HTML
 window.mostrarLugarAleatorio = mostrarLugarAleatorio;
 window.shakeElement = shakeElement;
+
+/* ---------------------------------------------------------------
+ * Loader, Hints, Embed Mode & Fallback
+ * --------------------------------------------------------------- */
+
+(function () {
+  'use strict';
+
+  // ── Embed Mode ──────────────────────────────────────────────────
+  // Si la URL tiene ?embed=true, activar modo lite (sin nav, footer, etc.)
+  if (new URLSearchParams(window.location.search).get('embed') === 'true') {
+    document.body.classList.add('embed-mode');
+    return; // No mostrar loader ni hints en embed
+  }
+
+  // ── Loader ──────────────────────────────────────────────────────
+  const loader = document.getElementById('site-loader');
+
+  function hideLoader() {
+    if (!loader) return;
+    loader.classList.add('hidden');
+    // Remover del DOM después de la transición
+    setTimeout(() => loader.remove(), 700);
+    showHint();
+  }
+
+  // Ocultar loader cuando la página termine de cargar (o max 4s)
+  if (document.readyState === 'complete') {
+    hideLoader();
+  } else {
+    window.addEventListener('load', hideLoader);
+    setTimeout(hideLoader, 4000); // Fallback: max 4 segundos
+  }
+
+  // ── Interaction Hint ────────────────────────────────────────────
+  function showHint() {
+    const hint = document.getElementById('interaction-hint');
+    if (!hint) return;
+
+    // Mostrar después de un breve delay
+    setTimeout(() => hint.classList.add('visible'), 800);
+
+    // Ocultar al primer scroll o después de 6 segundos
+    function dismissHint() {
+      hint.classList.remove('visible');
+      hint.classList.add('fade-out');
+      window.removeEventListener('scroll', dismissHint);
+      window.removeEventListener('touchstart', dismissHint);
+    }
+
+    window.addEventListener('scroll', dismissHint, { once: true });
+    window.addEventListener('touchstart', dismissHint, { once: true });
+    setTimeout(dismissHint, 6000);
+  }
+
+  // ── Fallback: scroll-timeline no soportado ──────────────────────
+  // Si el navegador no soporta animation-timeline, las animaciones
+  // ya se desactivan via @supports en CSS. Acá agregamos una clase
+  // para poder hacer ajustes adicionales si se necesita.
+  if (!CSS.supports('animation-timeline', 'view()')) {
+    document.documentElement.classList.add('no-scroll-timeline');
+  }
+
+})();

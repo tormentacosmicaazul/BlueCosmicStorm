@@ -30,6 +30,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <!-- LOADER INICIAL -->
+  <div id="site-loader" class="site-loader" aria-live="polite">
+    <div class="loader-content">
+      <div class="loader-symbol">☽</div>
+      <p class="loader-text">Cargando experiencia...</p>
+    </div>
+  </div>
+
+  <!-- HINT DE INTERACCIÓN (aparece después del loader) -->
+  <div id="interaction-hint" class="interaction-hint" aria-hidden="true">
+    <span>↕ Scrolleá para explorar · Tocá las cartas para interactuar</span>
+  </div>
+
   <!-- NAV -->
   <div class="w3-top">
     <div class="w3-bar mancias-container">
@@ -275,6 +288,94 @@
       <img src="img/Rectangle 19.webp" alt="Símbolo chamánico" loading="lazy"
            style="width:60%;border-radius:20px;">
     </aside>
+  </section>
+
+  <!-- VISIÓN / POSICIONAMIENTO -->
+  <section class="vision-section" id="vision">
+    <div class="vision-container">
+      <h2 class="vision-title">🔥 Esto no es un "proyecto visual"</h2>
+      <p class="vision-subtitle">Es un <strong>motor de exploración visual y simbólica</strong> dentro de un sistema mayor.</p>
+
+      <div class="vision-grid">
+        <div class="vision-card">
+          <span class="vision-icon">💡</span>
+          <h3>Nodo del Sistema</h3>
+          <p>Cada sección es un punto de entrada a un universo de conocimiento interconectado. No es una página estática — es una experiencia interactiva que canaliza información simbólica.</p>
+        </div>
+
+        <div class="vision-card">
+          <span class="vision-icon">🎥</span>
+          <h3>Preview Automático</h3>
+          <p>Integración con pipeline CI/CD que genera video-previews del sitio en cada deploy. El sistema se documenta a sí mismo.</p>
+        </div>
+
+        <div class="vision-card">
+          <span class="vision-icon">🧪</span>
+          <h3>Interacción Real</h3>
+          <p>Lectura de tarot funcional, animaciones scroll-driven, flip cards con lógica aleatoria. No es mockup — es código vivo.</p>
+        </div>
+
+        <div class="vision-card">
+          <span class="vision-icon">🧠</span>
+          <h3>Arquitectura Técnica</h3>
+          <p>CSS custom properties, data-attributes para fondos dinámicos, JS modular, imágenes WebP optimizadas (-85% peso), scroll-timeline nativo.</p>
+        </div>
+
+        <div class="vision-card">
+          <span class="vision-icon">🔗</span>
+          <h3>Relación con ArcheoScope</h3>
+          <p>Ambos proyectos comparten la misma filosofía: sistemas interactivos que transforman información compleja en experiencias navegables e intuitivas.</p>
+        </div>
+
+        <div class="vision-card">
+          <span class="vision-icon">🚀</span>
+          <h3>Prueba Concreta</h3>
+          <p>Esto demuestra capacidad real de construir <strong>sistemas interactivos complejos</strong>: desde la arquitectura de datos hasta la experiencia sensorial del usuario final.</p>
+        </div>
+      </div>
+
+      <p class="vision-insight">
+        <em>Hoy esto es interesante. Pero puede ser: prueba concreta de que sabés construir sistemas interactivos complejos.</em>
+      </p>
+    </div>
+  </section>
+
+  <!-- PREVIEW / EMBED PARA PORTFOLIO -->
+  <section class="embed-section" id="embed">
+    <div class="embed-container">
+      <h2 class="embed-title">🎥 Preview &amp; Embed</h2>
+      <p class="embed-subtitle">Integración directa con tu portfolio — listo para iframe o video automático.</p>
+
+      <div class="embed-grid">
+        <div class="embed-card">
+          <h3>📹 Preview Automático</h3>
+          <p>Pipeline CI/CD con Playwright graba una navegación automática en cada deploy y genera <code>preview.mp4</code>.</p>
+          <div class="embed-code">
+            <code>&lt;video src="https://tormentacosmicaazul.github.io/BlueCosmicStorm/preview.mp4" autoplay muted loop&gt;&lt;/video&gt;</code>
+          </div>
+        </div>
+
+        <div class="embed-card">
+          <h3>🧪 Modo Embed (Lite)</h3>
+          <p>Versión optimizada para iframe: sin controles pesados, autoplay, performance-first.</p>
+          <div class="embed-code">
+            <code>&lt;iframe src="https://tormentacosmicaazul.github.io/BlueCosmicStorm/?embed=true" frameborder="0" allow="autoplay"&gt;&lt;/iframe&gt;</code>
+          </div>
+        </div>
+
+        <div class="embed-card">
+          <h3>⚡ Performance / UX</h3>
+          <ul class="embed-features">
+            <li>✓ Loader inicial con feedback visual</li>
+            <li>✓ Hint de interacción al cargar</li>
+            <li>✓ Fallback si scroll-timeline no soportado</li>
+            <li>✓ Imágenes WebP (-85% peso)</li>
+            <li>✓ Lazy loading en todo below-the-fold</li>
+            <li>✓ CSS animations con will-change optimizado</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- FOOTER -->
