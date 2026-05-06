@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -8,15 +8,15 @@
   <meta name="author" content="Ignacio Fernández">
   <meta name="theme-color" content="#0a192f">
 
-  <!-- Open Graph / redes -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Oxlahun Cauac">
   <meta property="og:description" content="El mundo de las mancias, oráculos y canalización.">
-  <meta property="og:image" content="aka1.webp">
+  <meta property="og:image" content="img/aka1.webp">
   <meta property="og:locale" content="es_AR">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="aka1.webp">
+  <link rel="icon" type="image/png" href="img/aka1.webp">
 
   <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,10 +30,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <!-- NAV -->
   <div class="w3-top">
     <div class="w3-bar mancias-container">
       <header class="header">
-        <a href="#" class="w3-hide-small" aria-label="Inicio"><div class="logo" role="img" aria-label="Oxlahun Cauac"></div></a>
+        <a href="#" class="w3-hide-small" aria-label="Inicio">
+          <div class="logo" role="img" aria-label="Oxlahun Cauac"></div>
+        </a>
         <nav class="nav-menu" aria-label="Principal">
           <a href="#oraculos" class="nav-item">Oráculos</a>
           <a href="#registros" class="nav-item">Registros</a>
@@ -45,7 +48,7 @@
     </div>
   </div>
 
-  <!-- MANCIAS -->
+  <!-- HERO / MANCIAS -->
   <div class="content-wrapper">
     <article class="mancias-info ml-20">
       <h2 class="mancias-title ml-10">EL MUNDO DE<br>LAS MANCIAS</h2>
@@ -58,28 +61,30 @@
       </div>
     </article>
 
+    <!-- Cartas decorativas -->
     <section class="minimal-container w3-hover-white minimal w3-hide-medium w3-hide-large overlap-left">
-      <img src="Rectangle 2.webp" alt="Carta decorativa" loading="lazy">
+      <img src="img/Rectangle 2.webp" alt="Carta decorativa" loading="lazy">
     </section>
     <section class="minimal-container w3-hover-white w3-hide-small overlap-left">
-      <img src="Rectangle 2.webp" alt="" onclick="shakeElement(this)" loading="lazy">
+      <img src="img/Rectangle 2.webp" alt="" onclick="shakeElement(this)" loading="lazy">
     </section>
     <section class="minimal-container w3-hover-white w3-hide-small">
-      <img src="Rectangle 3.webp" alt="" onclick="shakeElement(this)" loading="lazy">
+      <img src="img/Rectangle 3.webp" alt="" onclick="shakeElement(this)" loading="lazy">
     </section>
     <section class="minimal-container w3-hover-white w3-hide-small">
-      <img src="Rectangle 4.webp" alt="" onclick="shakeElement(this)" loading="lazy">
+      <img src="img/Rectangle 4.webp" alt="" onclick="shakeElement(this)" loading="lazy">
     </section>
     <section class="minimal-container w3-hover-white w3-hide-small">
-      <img src="Rectangle 5.webp" alt="" onclick="shakeElement(this)" loading="lazy">
+      <img src="img/Rectangle 5.webp" alt="" onclick="shakeElement(this)" loading="lazy">
     </section>
     <section class="minimal-container w3-hover-white w3-hide-small">
-      <img src="Rectangle 6.webp" alt="" onclick="shakeElement(this)" loading="lazy">
+      <img src="img/Rectangle 6.webp" alt="" onclick="shakeElement(this)" loading="lazy">
     </section>
     <section class="minimal-container w3-hover-white w3-hide-small">
-      <img src="Rectangle 7.webp" alt="" onclick="shakeElement(this)" loading="lazy">
+      <img src="img/Rectangle 7.webp" alt="" onclick="shakeElement(this)" loading="lazy">
     </section>
 
+    <!-- Sidebar canalizar -->
     <aside class="canalizar-section">
       <h3 class="canalizar-title w3-hide-small mr-20">¿Qué es canalizar?</h3>
       <ul class="canalizar-list mr-20">
@@ -107,15 +112,15 @@
             <ul class="description-text2">
               <li>Según las cartas y su posicionamiento, el lector te proporcionará información relevante. Puede ser un consejo, una predicción o una reflexión sobre tu situación.</li>
               <li>El tarot no es necesariamente predictivo, sino más bien una herramienta para la autoexploración y la toma de decisiones.</li>
-              <li>Muchos creen que el tarot funciona a través de la sincronicidad. Es decir, las cartas que aparecen no son aleatorias, sino que están conectadas de alguna manera con tu situación o energía en ese momento.</li>
+              <li>Muchos creen que el tarot funciona a través de la sincronicidad: las cartas que aparecen están conectadas con tu situación o energía en ese momento.</li>
               <li>El tarotista se sintoniza con esa energía y canaliza su intuición para ofrecer respuestas y consejos.</li>
               <li>Las cartas se leen en función del contexto y de lo que estás buscando comprender o resolver en tu vida.</li>
             </ul>
             <button class="cta-button2" type="button" onclick="mostrarLugarAleatorio()">Toma una carta!</button>
           </div>
           <section class="minimal-container3 w3-hide-small seccion z-back">
-            <img src="Rectangle 11.webp" alt="" loading="lazy" style="margin-left:20px;margin-top:-350px;">
-            <img src="Rectangle 12.webp" alt="" loading="lazy" style="margin-left:-350px;margin-top:-350px;">
+            <img src="img/Rectangle 11.webp" alt="" loading="lazy" style="margin-left:20px;margin-top:-350px;">
+            <img src="img/Rectangle 12.webp" alt="" loading="lazy" style="margin-left:-350px;margin-top:-350px;">
           </section>
         </section>
       </article>
@@ -126,13 +131,13 @@
             <div class="card-front">
               <figure>
                 <div class="img-bg"></div>
-                <img width="300" height="450" src="cartaDorso.webp" alt="Dorso de la carta de tarot" loading="lazy">
+                <img width="300" height="450" src="img/cartaDorso.webp" alt="Dorso de la carta de tarot" loading="lazy">
               </figure>
             </div>
             <div class="card-back">
               <figure>
                 <div class="img-bg"></div>
-                <img width="300" height="450" src="cartaDorso.webp" alt="" loading="lazy">
+                <img width="300" height="450" src="img/cartaDorso.webp" alt="" loading="lazy">
               </figure>
               <button id="resultado" type="button" aria-live="polite" aria-label="Resultado de la carta"></button>
               <div class="design-container" aria-hidden="true">
@@ -152,7 +157,7 @@
     </div>
   </div>
 
-  <!-- REGISTROS -->
+  <!-- REGISTROS AKÁSHICOS -->
   <div class="w3-row w3-padding-64" data-bg="storm" id="registros">
     <h1 class="lib-title">BIBLIOTECA ETÉRICA</h1>
     <section class="mancias-container3 mb-120">
@@ -169,35 +174,34 @@
         <aside class="canalizar-section">
           <h3 class="description-text3 mr-25">¿Cómo se realiza<br>una sesión de lectura?</h3>
           <ul class="canalizar-list mr-20" style="text-align:right;">
-            <li class="canalizar-item2">Durante una sesión, el lector accede a los registros del consultante, esto se logra a través de meditación, respiración consciente y pronunciando una oración de apertura.</li>
+            <li class="canalizar-item2">Durante una sesión, el lector accede a los registros del consultante a través de meditación, respiración consciente y una oración de apertura.</li>
             <li class="canalizar-item2">A continuación se conecta con la energía del Ákasha y accede a la información almacenada allí.</li>
-            <li class="canalizar-item2">A través de visiones, mensajes e intuición, el interprete relata lo que percibe y comparte con el consultante.</li>
+            <li class="canalizar-item2">A través de visiones, mensajes e intuición, el intérprete relata lo que percibe y comparte con el consultante.</li>
           </ul>
         </aside>
       </div>
     </section>
   </div>
 
-  <!-- LIMPIEZA -->
+  <!-- LIMPIEZA / SAHUMOS -->
   <section class="content-wrapper2" data-bg="sahumo" id="limpieza">
     <div class="w3-quarter canalizar-section2 ml-20 mt-20 mr-20">
       <div class="w3-card w3-padding-large card-ritos-wrap">
-        <img class="seccion card-img" src="sahumo.webp" alt="Sahumos de hierbas" loading="lazy">
+        <img class="seccion card-img" src="img/sahumo.webp" alt="Sahumos de hierbas" loading="lazy">
         <div class="w3-container">
           <h3 class="mancias-title2" style="font-size:30px;">Sahumos</h3>
           <ul>
             <li>Romero: Limpia y aumenta la confianza.</li>
             <li>Salvia: Purifica y protege de energías densas.</li>
             <li>Lavanda: Calma la ansiedad y propicia el sueño profundo.</li>
-            <li>Ruda: Absorbe y aleja energías negativas, entre otras opciones.</li>
+            <li>Ruda: Absorbe y aleja energías negativas.</li>
           </ul>
         </div>
       </div>
     </div>
-
     <div class="w3-quarter canalizar-section2 ml-20 mt-20 mr-20">
       <div class="w3-card w3-padding-large card-ritos-wrap">
-        <img class="seccion card-img z-back" src="sahumo2.webp" alt="Intención consciente al sahumar" loading="lazy">
+        <img class="seccion card-img" src="img/sahumo2.webp" alt="Intención consciente al sahumar" loading="lazy">
         <div class="w3-container">
           <h3 class="mancias-title2" style="font-size:30px;">Intención consciente</h3>
           <ul>
@@ -208,16 +212,15 @@
         </div>
       </div>
     </div>
-
     <div class="w3-quarter canalizar-section2 ml-20 mt-20 mr-20">
       <div class="w3-card w3-padding-large card-ritos-wrap">
-        <img class="seccion card-img" src="sahumo3.webp" alt="Beneficios del sahumo" loading="lazy">
+        <img class="seccion card-img" src="img/sahumo3.webp" alt="Beneficios del sahumo" loading="lazy">
         <div class="w3-container">
           <h3 class="mancias-title2" style="font-size:30px;">Beneficios</h3>
           <ul>
-            <li>Elimina bloqueos emocionales y pensamientos negativos que afectan tu bienestar.</li>
+            <li>Elimina bloqueos emocionales y pensamientos negativos.</li>
             <li>Atrae vibraciones positivas y aleja las negativas.</li>
-            <li>Esto puede ayudarte a sentirte más ligero, más centrado y con mayor claridad mental.</li>
+            <li>Te ayuda a sentirte más ligero, centrado y con mayor claridad mental.</li>
           </ul>
         </div>
       </div>
@@ -232,18 +235,16 @@
         <p class="description-text">
           Se basa en la idea de que existe una energía vital universal que fluye a través de todos
           los seres vivos. Esta energía se llama "Ki" en japonés (o "Chi" en chino). El término
-          japonés "Reiki" significa: "Rei" (sabiduría de Dios o poder superior) y "Ki" (que se
-          refiere a la energía vital).
+          japonés "Reiki" significa: "Rei" (sabiduría de Dios o poder superior) y "Ki" (energía vital).
         </p>
-        <img src="reiki3.webp" class="card-info-img" alt="Persona recibiendo reiki" loading="lazy">
+        <img src="img/reiki3.webp" class="card-info-img" alt="Persona recibiendo reiki" loading="lazy">
       </article>
       <aside class="w3-quarter canalizar-section2 sec2" style="align-items:center;">
-        <img src="reiki2.webp" class="card-info-img" alt="Manos canalizando energía" loading="lazy">
+        <img src="img/reiki2.webp" class="card-info-img" alt="Manos canalizando energía" loading="lazy">
         <h1 class="mancias-title2">Reiki</h1>
         <p class="description-text">
           El reikista actúa como un canal para la energía universal, transmitiéndola al paciente.
-          Se cree que esta energía ayuda a equilibrar y armonizar los sistemas físico, emocional
-          y espiritual.
+          Se cree que esta energía ayuda a equilibrar y armonizar los sistemas físico, emocional y espiritual.
         </p>
       </aside>
     </div>
@@ -252,19 +253,18 @@
   <!-- CHAMANISMO -->
   <section class="content-wrapper2" data-bg="shamanism" id="chamanismo">
     <div class="w3-quarter canalizar-section2 ml-20 mt-100 mb-100" style="align-items:center;">
-      <img src="Star 1.webp" class="card-info-img" alt="" loading="lazy" style="opacity:0.6;">
-      <img src="Subilo aca (4).gif" width="300" height="400" alt="Animación chamánica" loading="lazy" style="margin-left:5px;margin-top:-475px;opacity:0.2;">
+      <img src="img/Star 1.webp" class="card-info-img" alt="" loading="lazy" style="opacity:0.6;">
+      <img src="img/Subilo aca (4).gif" width="300" height="400" alt="Animación chamánica" loading="lazy"
+           style="margin-left:5px;margin-top:-475px;opacity:0.2;">
       <h1 class="mancias-title2" style="margin-top:125px;">Munay Ki</h1>
       <p class="description-text" style="font-size:15px;margin-top:20px;">
         Proviene del idioma quechua y se traduce como "Te amo" o "Sé como tú eres". Refleja la
         esencia de estos rituales: el poder del amor y la conexión con nuestra verdadera naturaleza.
       </p>
     </div>
-
     <div class="w3-quarter canalizar-section2 w3-hide-small seccion mt-100">
-      <img src="Star 2.webp" width="80%" alt="" loading="lazy" onclick="shakeElement(this)">
+      <img src="img/Star 2.webp" width="80%" alt="" loading="lazy" onclick="shakeElement(this)">
     </div>
-
     <aside class="w3-quarter canalizar-section2 sec2 mt-100 mb-100" style="align-items:center;">
       <h1 class="mancias-title2">Ritos Chamánicos</h1>
       <p class="description-text" style="font-size:15px;text-align:right;margin-right:40px;">
@@ -272,26 +272,27 @@
         con el mundo exterior debido a una profecía que hablaba de tiempos en los que la humanidad
         los necesitaría.
       </p>
-      <img src="Rectangle 19.webp" alt="Símbolo chamánico" loading="lazy" style="width:60%;border-radius:20px;">
+      <img src="img/Rectangle 19.webp" alt="Símbolo chamánico" loading="lazy"
+           style="width:60%;border-radius:20px;">
     </aside>
   </section>
 
   <!-- FOOTER -->
   <footer class="backFooter site-footer">
     <div class="content-wrapper5">
-      <nav aria-label="Enlaces de temas">
+      <nav aria-label="Temas">
         <ul class="footer-links">
-          <li><a href="meditacion.html">Meditación</a><img src="giphy.gif" alt=""></li>
-          <li><a href="ritos.html">Rituales</a><img src="giphy.gif" alt=""></li>
-          <li><a href="espiritismo.html">Espiritismo</a><img src="giphy.gif" alt=""></li>
-          <li><a href="curacion.html">Curación</a><img src="giphy.gif" alt=""></li>
-          <li><a href="suenos.html">Sueños</a><img src="giphy.gif" alt=""></li>
-          <li><a href="pensamientos.html">Pensamientos</a><img src="giphy.gif" alt=""></li>
-          <li><a href="antroposofia.html">Antroposofía</a><img src="giphy.gif" alt=""></li>
-          <li><a href="teosofia.html">Teosofía</a><img src="giphy.gif" alt=""></li>
-          <li><a href="cabala.html">Cábala</a><img src="giphy.gif" alt=""></li>
-          <li><a href="astrologia.html">Astrología</a><img src="giphy.gif" alt=""></li>
-          <li><a href="sincronario.html">Sincronario Maya</a><img src="giphy.gif" alt=""></li>
+          <li><a href="meditacion.html">Meditación</a><img src="img/giphy.gif" alt=""></li>
+          <li><a href="ritos.html">Rituales</a><img src="img/giphy.gif" alt=""></li>
+          <li><a href="espiritismo.html">Espiritismo</a><img src="img/giphy.gif" alt=""></li>
+          <li><a href="curacion.html">Curación</a><img src="img/giphy.gif" alt=""></li>
+          <li><a href="suenos.html">Sueños</a><img src="img/giphy.gif" alt=""></li>
+          <li><a href="pensamientos.html">Pensamientos</a><img src="img/giphy.gif" alt=""></li>
+          <li><a href="antroposofia.html">Antroposofía</a><img src="img/giphy.gif" alt=""></li>
+          <li><a href="teosofia.html">Teosofía</a><img src="img/giphy.gif" alt=""></li>
+          <li><a href="cabala.html">Cábala</a><img src="img/giphy.gif" alt=""></li>
+          <li><a href="astrologia.html">Astrología</a><img src="img/giphy.gif" alt=""></li>
+          <li><a href="sincronario.html">Sincronario Maya</a><img src="img/giphy.gif" alt=""></li>
         </ul>
       </nav>
     </div>
