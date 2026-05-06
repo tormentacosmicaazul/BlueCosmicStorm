@@ -192,9 +192,21 @@ a:link, a:visited { text-decoration: none; color: inherit; }
   display: flex;
   margin-top: 150px;
   width: 100%;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 0;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: visible;
+}
+
+/* Cartas en columna vertical al lado del texto */
+.cards-column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-shrink: 0;
+  margin-left: -40px;
+  z-index: 0;
 }
 .content-wrapper2 {
   display: flex;
@@ -427,20 +439,37 @@ a:link, a:visited { text-decoration: none; color: inherit; }
   margin-bottom: 6px;
 }
 
-/* ---------- Imágenes decorativas ---------- */
+/* ---------- Imágenes decorativas (cartas hero) ---------- */
 .minimal-container {
   transition: transform 0.3s ease;
-  width: 100%;
-  height: 100%;
+  /* Dimensión real para que el browser las renderice siempre */
+  width: 120px;
+  height: 180px;
+  flex-shrink: 0;
   display: flex;
-  min-height: 0;
-  max-width: 0;
   justify-content: center;
   align-items: center;
-  margin: -180px 0 0 -180px;
+  /* Superposición decorativa sin tapar el texto */
+  margin-left: -60px;
+  margin-top: 0;
+  z-index: 0;
   box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
+  overflow: visible;
+}
+.minimal-container img {
+  /* Imagen más grande que el contenedor — efecto de solapamiento */
+  width: 160px;
+  height: auto;
+  display: block;
 }
 .minimal-container:hover { transform: scale(1.08) rotate(4deg); }
+
+/* Texto del hero siempre por encima de las cartas */
+.mancias-info {
+  position: relative;
+  z-index: 2;
+}
+
 .minimal-container3 {
   width: 100%;
   height: 100%;
@@ -628,7 +657,8 @@ figure, .img-bg { position: absolute; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 991px) {
-  .content-wrapper { max-width: 100%; margin-top: 40px; }
+  .content-wrapper { max-width: 100%; margin-top: 40px; flex-wrap: wrap; }
+  .cards-column { display: none; }
   .mancias-description { padding-left: 20px; }
   .cta-button { padding: 14px 22px; }
   .image-container { padding: 0 20px; }

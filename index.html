@@ -74,27 +74,30 @@
       </div>
     </article>
 
-    <!-- Cartas decorativas -->
-    <section class="minimal-container w3-hover-white minimal w3-hide-medium w3-hide-large overlap-left">
-      <img src="img/Rectangle 2.webp" alt="Carta decorativa" loading="lazy">
-    </section>
-    <section class="minimal-container w3-hover-white w3-hide-small overlap-left">
-      <img src="img/Rectangle 2.webp" alt="" onclick="shakeElement(this)" loading="lazy">
-    </section>
-    <section class="minimal-container w3-hover-white w3-hide-small">
-      <img src="img/Rectangle 3.webp" alt="" onclick="shakeElement(this)" loading="lazy">
-    </section>
-    <section class="minimal-container w3-hover-white w3-hide-small">
-      <img src="img/Rectangle 4.webp" alt="" onclick="shakeElement(this)" loading="lazy">
-    </section>
-    <section class="minimal-container w3-hover-white w3-hide-small">
-      <img src="img/Rectangle 5.webp" alt="" onclick="shakeElement(this)" loading="lazy">
-    </section>
-    <section class="minimal-container w3-hover-white w3-hide-small">
-      <img src="img/Rectangle 6.webp" alt="" onclick="shakeElement(this)" loading="lazy">
-    </section>
-    <section class="minimal-container w3-hover-white w3-hide-small">
-      <img src="img/Rectangle 7.webp" alt="" onclick="shakeElement(this)" loading="lazy">
+    <!-- Cartas decorativas en columna vertical — eager: están above-the-fold -->
+    <div class="cards-column w3-hide-small">
+      <section class="minimal-container w3-hover-white overlap-left">
+        <img src="img/Rectangle 2.webp" alt="" onclick="shakeElement(this)">
+      </section>
+      <section class="minimal-container w3-hover-white">
+        <img src="img/Rectangle 3.webp" alt="" onclick="shakeElement(this)">
+      </section>
+      <section class="minimal-container w3-hover-white">
+        <img src="img/Rectangle 4.webp" alt="" onclick="shakeElement(this)">
+      </section>
+      <section class="minimal-container w3-hover-white">
+        <img src="img/Rectangle 5.webp" alt="" onclick="shakeElement(this)">
+      </section>
+      <section class="minimal-container w3-hover-white">
+        <img src="img/Rectangle 6.webp" alt="" onclick="shakeElement(this)">
+      </section>
+      <section class="minimal-container w3-hover-white">
+        <img src="img/Rectangle 7.webp" alt="" onclick="shakeElement(this)">
+      </section>
+    </div>
+    <!-- Versión móvil: solo una carta -->
+    <section class="minimal-container w3-hover-white minimal w3-hide-medium w3-hide-large">
+      <img src="img/Rectangle 2.webp" alt="Carta decorativa">
     </section>
 
     <!-- Sidebar canalizar -->
