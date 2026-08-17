@@ -441,7 +441,7 @@ a:link, a:visited { text-decoration: none; color: inherit; }
   justify-content: center;
   align-items: center;
   /* Margen negativo para el efecto de solapamiento decorativo */
-  margin: -180px 0 0 -180px;
+  margin: 0 0 0 -180px;
   box-shadow: none;
   /* z-index bajo para que nunca tape el texto */
   z-index: 0;
